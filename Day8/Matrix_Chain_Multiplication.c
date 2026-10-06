@@ -8,12 +8,11 @@ int main() {
     int m[20][20];
     int s[20][20];
 
-    // Number of matrices
+  
     printf("Enter number of matrices: ");
     scanf("%d", &n);
 
-    // Input dimensions
-    // For n matrices, we need n+1 dimensions
+   
     printf("Enter dimensions:\n");
 
     for (i = 0; i <= n; i++)
@@ -32,7 +31,7 @@ int main() {
 
             m[i][j] = INF;
 
-            // Try every possible split
+            //  split
             for (k = i; k < j; k++) {
 
                 int cost = m[i][k]
